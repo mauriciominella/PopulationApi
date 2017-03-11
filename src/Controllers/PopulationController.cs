@@ -18,7 +18,7 @@ namespace PouplationApi.Controllers
         
         // GET api/Population
         [HttpGet("{cityName}/{radius}")]
-        public string Get(string cityName, decimal radius)
+        public ComputeResult Get(string cityName, decimal radius)
         {
             ComputeArgs args = new ComputeArgs() {
                CityName = cityName,

@@ -1,14 +1,14 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "debugType": "portable",
-    "emitEntryPoint": true
+    "debugType": "portable"
   },
   "dependencies": {
-    "Microsoft.AspNetCore.Mvc": "1.1.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
-    "mongocsharpdriver": "2.4.2"
+    "System.Runtime.Serialization.Primitives": "4.3.0",
+    "xunit": "2.1.0",
+    "dotnet-test-xunit": "1.0.0-rc2-192208-24"
   },
+  "testRunner": "xunit",
   "frameworks": {
     "netcoreapp1.1": {
       "dependencies": {
@@ -17,7 +17,10 @@
           "version": "1.1.0"
         }
       },
-      "imports": "dnxcore50"
+      "imports": [
+        "dotnet5.4",
+        "portable-net451+win8"
+      ]
     }
   }
 }
